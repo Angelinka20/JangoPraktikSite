@@ -1,0 +1,94 @@
+{% load static %}	
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'images/favicon.ico' %}">
+    <!--<link rel="stylesheet" href="{% static '//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700%7CZilla+Slab:300,400,500,700,700i%7CGloria+Hallelujah' %}" type="text/css">-->
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-logo"><a class="brand" href="index.html"><img class="brand-logo-dark" src="{% static 'images/TNPULogo.png' %}" alt="" width="245" height="50"/><img class="brand-logo-light" src="{% static 'images/TNPULogo.png' %}" alt="" width="245" height="50"/></a>
+      </div>
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+    	{% block header %}
+      {% endblock %}
+      <section>
+        <!--Swiper-->
+        <div class="swiper-container swiper-slider swiper-slider-1" data-loop="false" data-autoplay="5000" data-simulate-touch="false">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-slide-bg="{% static 'images/swiper-slide-1.jpg' %}">
+              <div class="swiper-slide-caption context-dark">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-10 col-lg-7">
+                      <div class="box-animation">
+                        <h6 data-caption-animate="slideInLeft" data-caption-delay="150">Quality Higher Education</h6>
+                        <h2 data-caption-animate="slideInLeft" data-caption-delay="300">Any Successful Career Starts  <span class="text-italic font-weight-bold">With Good Education</span>
+                        </h2>
+                        <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="450"><a class="button button-primary-gradient" href="#"><span>sign up for excursion</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="{% static 'images/swiper-slide-2.jpg' %}">
+              <div class="swiper-slide-caption context-dark">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-10 col-lg-7">
+                      <div class="box-animation">
+                        <h6 data-caption-animate="slideInLeft" data-caption-delay="150">A vAriety of programs</h6>
+                        <h2 data-caption-animate="slideInLeft" data-caption-delay="300">Providing Students with  <span class="text-italic font-weight-bold">Professional Education</span>
+                        </h2>
+                        <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="450"><a class="button button-primary-gradient" href="#"><span>sign up for excursion</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="{% static 'images/swiper-slide-3.jpg' %}">
+              <div class="swiper-slide-caption context-dark">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-10 col-lg-7">
+                      <div class="box-animation">
+                        <h6 data-caption-animate="slideInLeft" data-caption-delay="150">Campus Community</h6>
+                        <h2 data-caption-animate="slideInLeft" data-caption-delay="300">Become a Part of Our Campus and <span class="text-italic font-weight-bold">Make Friends</span>
+                        </h2>
+                        <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="450"><a class="button button-primary-gradient" href="#"><span>sign up for excursion</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      {% block footer %}
+      {% endblock %}
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="{% static 'js/core.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <!-- coded by Drel-->
+  </body>
+</html>
