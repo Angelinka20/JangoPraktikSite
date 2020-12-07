@@ -32,4 +32,4 @@ class News(models.Model):
         return self.title
 
     def path(self):
-        return "images/downloaded/" + self.image.url
+        return self.image.url[12::]
