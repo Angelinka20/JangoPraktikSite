@@ -1,3 +1,105 @@
-<html>
-
-</html>
+{% load static %}
+{% include 'patrs/pageshead.html' %}
+{% include 'patrs/pageshead.html' %}
+{% include 'patrs/pagesheader.html' %}
+<section class="section section-lg bg-default text-center">
+    <div class="container">
+        <h2 class="wow fadeIn">Предмети</h2>
+        <div class="row row-30 row-md-50 row-xl-70">
+          	{% for post in posts %}
+    			<div class="col-sm-6 col-lg-4 wow fadeIn">
+              		<!--Post Minimal-->
+              		<div class="post-minimal">
+                		<figure class="post-minimal-media"><a href="#"><img class="post-minimal-image" src="{{ post.image }}" alt="" width="370" height="260"/></a></figure>
+                		<div class="post-minimal-meta">
+                  			<ul class="list-inline">
+                    			<li class="list-inline-item">Викладач: </li>
+                    			<li class="list-inline-itema"><a href="#">{{ post.teatcher }}</a></li>
+                  			</ul>
+                		</div>
+                	<h4 class="post-minimal-title"><a href="#">Financial Analyst Course</a></h4>
+              		</div>
+            	</div>
+			{% endfor %}
+            <!--<div class="col-sm-6 col-lg-4 wow fadeIn">
+              Post Minimal
+              <div class="post-minimal">
+                <figure class="post-minimal-media"><a href="#"><img class="post-minimal-image" src="images/grid-gallery-1-370x260.jpg" alt="" width="370" height="260"/></a></figure>
+                <div class="post-minimal-meta">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">Teacher: </li>
+                    <li class="list-inline-itema"><a href="#">Charles Banks</a></li>
+                  </ul>
+                </div>
+                <h4 class="post-minimal-title"><a href="#">Financial Analyst Course</a></h4>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+              Post Minimal
+              <div class="post-minimal">
+                <figure class="post-minimal-media"><a href="#"><img class="post-minimal-image" src="images/grid-gallery-2-370x260.jpg" alt="" width="370" height="260"/></a></figure>
+                <div class="post-minimal-meta">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">Teacher: </li>
+                    <li class="list-inline-itema"><a href="#">Maria Howard</a></li>
+                  </ul>
+                </div>
+                <h4 class="post-minimal-title"><a href="#">Digital Marketing Course</a></h4>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+              Post Minimal
+              <div class="post-minimal">
+                <figure class="post-minimal-media"><a href="#"><img class="post-minimal-image" src="images/grid-gallery-3-370x260.jpg" alt="" width="370" height="260"/></a></figure>
+                <div class="post-minimal-meta">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">Teacher: </li>
+                    <li class="list-inline-itema"><a href="#">Steven Carter</a></li>
+                  </ul>
+                </div>
+                <h4 class="post-minimal-title"><a href="#">Graphic Design Course</a></h4>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow fadeIn">
+              Post Minimal
+              <div class="post-minimal">
+                <figure class="post-minimal-media"><a href="#"><img class="post-minimal-image" src="images/grid-gallery-4-370x260.jpg" alt="" width="370" height="260"/></a></figure>
+                <div class="post-minimal-meta">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">Teacher: </li>
+                    <li class="list-inline-itema"><a href="#">Julie Weaver</a></li>
+                  </ul>
+                </div>
+                <h4 class="post-minimal-title"><a href="#">Computer Science </a></h4>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+              Post Minimal
+              <div class="post-minimal">
+                <figure class="post-minimal-media"><a href="#"><img class="post-minimal-image" src="images/grid-gallery-5-370x260.jpg" alt="" width="370" height="260"/></a></figure>
+                <div class="post-minimal-meta">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">Teacher: </li>
+                    <li class="list-inline-itema"><a href="#">Kathy Gibson</a></li>
+                  </ul>
+                </div>
+                <h4 class="post-minimal-title"><a href="#">Political Economy</a></h4>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+              Post Minimal
+              <div class="post-minimal">
+                <figure class="post-minimal-media"><a href="#"><img class="post-minimal-image" src="images/grid-gallery-6-370x260.jpg" alt="" width="370" height="260"/></a></figure>
+                <div class="post-minimal-meta">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">Teacher: </li>
+                    <li class="list-inline-itema"><a href="#">Walter Myers</a></li>
+                  </ul>
+                </div>
+                <h4 class="post-minimal-title"><a href="#">Mathematics and Statistics</a></h4>
+              </div>-->
+        </div>
+    </div>
+</section>	
+{% include 'patrs/pagesfooter.html' %}
+{% include 'patrs/java.html' %}

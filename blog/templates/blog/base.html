@@ -1,32 +1,10 @@
 {% load static %}	
 <html class="wide wow-animation" lang="en">
-  <head>
-    <title>Home</title>
-    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'images/favicon.ico' %}">
-    <!--<link rel="stylesheet" href="{% static '//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700%7CZilla+Slab:300,400,500,700,700i%7CGloria+Hallelujah' %}" type="text/css">-->
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
-  </head>
+  {% include 'patrs/pageshead.html' %}
   <body>
-    <div class="preloader">
-      <div class="preloader-logo"><a class="brand" href="index.html"><img class="brand-logo-dark" src="{% static 'images/TNPULogo.png' %}" alt="" width="245" height="50"/><img class="brand-logo-light" src="{% static 'images/TNPULogo.png' %}" alt="" width="245" height="50"/></a>
-      </div>
-      <div class="preloader-body">
-        <div class="cssload-container">
-          <div class="cssload-speeding-wheel"></div>
-        </div>
-      </div>
-    </div>
+    {% include 'patrs/pagespreloader.html' %}
     <div class="page">
-    	{% block header %}
-      {% endblock %}
+    	{% include 'patrs/pagesheader.html' %}
       <section>
         <!--Swiper-->
         <div class="swiper-container swiper-slider swiper-slider-1" data-loop="false" data-autoplay="5000" data-simulate-touch="false">
@@ -83,12 +61,9 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-      {% block footer %}
-      {% endblock %}
+      {% include 'patrs/pagesfooter.html' %}
     </div>
-    <div class="snackbars" id="form-output-global"></div>
-    <script src="{% static 'js/core.min.js' %}"></script>
-    <script src="{% static 'js/script.js' %}"></script>
+     {% include 'patrs/java.html' %}
     <!-- coded by Drel-->
   </body>
 </html>
