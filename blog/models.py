@@ -18,7 +18,7 @@ class News(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
-    image = models.ImageField(null=True, blank=True)
+    image = models.ImageField(upload_to='blog/static/images/downloaded', null=True, blank=True)
     created_date = models.DateTimeField(
             default=timezone.now)
     published_date = models.DateTimeField(
@@ -30,3 +30,6 @@ class News(models.Model):
 
     def __str__(self):
         return self.title
+
+    def path(self):
+        return "images/downloaded/" + self.image.url
