@@ -18,3 +18,7 @@ def news(request):
 
 def home(request):
     return render(request, 'blog/base.html', {})
+
+def marks(request):
+    posts = Post.objects.filter()
+    return render(request, 'blog/marks.html', {'posts': posts})
