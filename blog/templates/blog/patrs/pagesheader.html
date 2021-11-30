@@ -10,21 +10,19 @@
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a class="brand" href="#"><img class="brand-logo-dark" src="{% static 'images/TNPULogo.png' %}" alt="" width="245" height="50"/><img class="brand-logo-light" src="{% static 'images/TNPULogo.png' %}" alt="" width="245" height="50"/></a>
+                  <div class="rd-navbar-brand"><a class="brand" href="{% url 'home' %}"><img class="brand-logo-dark" src="{% static 'images/flora.png' %}" alt="" width="245" height="10"/><img class="brand-logo-light" src="{% static 'images/flora.png' %}" alt="" width="245" height="50"/></a>
                   </div>
                 </div>
                 <div class="rd-navbar-nav-wrap">
                   <!-- RD Navbar Nav		-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'home' %}">Home</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'home' %}">Головна</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'google_rozklad' %}">Розклад</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'predmets' %}">Предмети</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'news' %}">Новини</a>
-                    </li>
-
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="http://mail.fizmat.tnpu.edu.ua/">Фізмат Пошта</a>
                   </ul>
                 </div>
               </div>

@@ -7,7 +7,6 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
     image = models.ImageField(upload_to='blog/static/images/downloaded', null=True, blank=True)
-    url = models.CharField(max_length=500)
     def __str__(self):
         return self.title
 

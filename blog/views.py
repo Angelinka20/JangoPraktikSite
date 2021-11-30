@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.utils import timezone
 from .models import Post, News
+from django.shortcuts import render, get_object_or_404
 
 def post_list(request):
     return render(request, 'blog/index.html', {})
@@ -22,3 +23,7 @@ def home(request):
 def marks(request):
     posts = Post.objects.filter()
     return render(request, 'blog/marks.html', {'posts': posts})
+
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/s.html', {'post': post})
